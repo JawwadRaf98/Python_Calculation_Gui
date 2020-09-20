@@ -1,3 +1,4 @@
+import tkinter
 from tkinter import *
 
 root = Tk()
@@ -10,7 +11,8 @@ root.resizable(0,0)
 # display frame
 
 display = Label(
-    text = 'Label',
+    root,
+    text = '12+2312',
     anchor =  E,
     bg = 'white',
     padx = 10,
@@ -20,16 +22,15 @@ display.pack(expand = True, fill = 'both')
 
 # clear btn frame
 
-clear = Frame(root, bg = 'white')
+clear = Frame(root)
 clear.pack(expand = True, fill = 'both')
 
 clearBtn = Button(
-    
     clear,
     bg = '#88fce1',
     text = "CE",
     font = ("Vernada", 22),
-    relief = GROOVE,
+    # relief = GROOVE,
     border = 0
 )
 clearBtn.pack(side = LEFT, expand = True , fill = 'both')
